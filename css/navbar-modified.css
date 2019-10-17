@@ -1,0 +1,93 @@
+*
+{
+	margin :0%;	
+}
+body
+{
+    /*background-image: url(img/Background.jpg);  */
+}
+@font-face 
+{
+    font-family: montserrat;
+    src: url(fonts/Montserrat-Medium.ttf);
+}
+@font-face
+{
+    font-family: montserrat-bold;
+    src: url(fonts/Montserrat-Bold.ttf)
+}
+
+.topnav 
+{
+    display: flex;
+    align-content: flex-end;
+    padding-top: 50px;
+    background-color:rgb(0, 0, 0); // Make it transparent for different backgrounds
+    overflow: auto;
+}
+
+.name
+{
+    flex-grow: 1;
+    color: #f2f2f2;
+    position: relative;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-family: montserrat-bold;
+    font-size: 25px;
+}
+.space2
+{
+    position: relative;
+    flex-grow: 15;
+}
+.nav-element
+{
+    flex-grow: 1;
+    position: relative;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: montserrat;   
+}
+.space
+{
+    position: relative;
+    flex-grow: 3;
+}
+.nav-element::after
+{
+    content: '';
+    position: relative;
+    width: 0; height: 3px;
+    display: block;
+    margin-top: 5px;
+    margin-left: 20px;
+    left: 0;
+    background: #fff;
+    transition: width 0.8s ease;
+}
+
+.nav-element:hover::after
+{
+    left : 0;
+    width: 50%;
+}
+
+.current::after
+{
+    content: '';
+    position: relative;
+    width: 50%; height: 3px;
+    display: block;
+    margin-top: 5px;
+    margin-left: 20px;
+    left: 0;
+    background: #fff;
+}
+#my-type-write{
+    color:black;
+}
