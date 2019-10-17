@@ -2,10 +2,10 @@
 {
 	margin :0%;	
 }
-body
+/*body
 {
     
-}
+}  */
 @font-face 
 {
     font-family: montserrat;
@@ -22,7 +22,7 @@ body
     display: flex;
     align-content: flex-end;
     padding-top: 50px;
-    background-color:white; // Make it transparent for different backgrounds
+    background-color:white; /* Make it transparent for different backgrounds */
     overflow: auto;
 }
 

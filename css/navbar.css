@@ -4,17 +4,17 @@
 }
 body
 {
-    background-image: url(img/Background.jpg);
+    background-image: url(../img/Background.jpg )/*img/Background.jpg);  */
 }
 @font-face /* This is for loading the font; Giving the name monserrat and load the font from given location*/
 {
     font-family: montserrat;
-    src: url(fonts/Montserrat-Medium.ttf);
+    src: url(../fonts/Montserrat-Medium.ttf);
 }
 @font-face
 {
     font-family: montserrat-bold;
-    src: url(fonts/Montserrat-Bold.ttf)
+    src: url(../fonts/Montserrat-Bold.ttf)
 }
 
 .topnav 
