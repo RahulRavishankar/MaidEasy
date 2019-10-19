@@ -2,9 +2,23 @@
 {
 	margin :0%;	
 }
-body
+html
 {
-    background-image: url(../img/Background.jpg )/*img/Background.jpg);  */
+    scroll-behavior: smooth;
+}
+#home
+{
+    background-image: url(../img/Background.jpg );
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+}
+#about
+{
+    background-image: url(../img/Cleaning-Backgrounds-Desktop.bmp );
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
 }
 @font-face /* This is for loading the font; Giving the name monserrat and load the font from given location*/
 {
@@ -98,20 +112,3 @@ body
     left: 0;
     background:white;
 }
-
-div.container6 
-{
-    height: 10em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration-color: #f2f2f2;
-    position: relative;
-    vertical-align: center;
-
-}
-div.container6 p 
-{
-    margin: 0 
-}
-
