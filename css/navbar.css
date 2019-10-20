@@ -12,7 +12,8 @@ html
 } 
 #about
 {
-    background-image: url(../img/Cleaning-Backgrounds-Desktop.bmp );
+    background-image: url(../img/tina-bosse-WSw-taiyZPk-unsplash.jpg );
+    opacity: 95;
     height: 100vh;
     width: 100vw;
     overflow: auto;
@@ -49,14 +50,6 @@ html
     src: url(../fonts/Montserrat-Bold.ttf)
 }
 
-.topnav 
-{
-    display: flex;
-    align-content: flex-end;
-    padding-top: 50px;
-    background-color:rgb(0, 0, 0);
-    overflow: auto;
-}
 .navbar-brand
 {
     color: white !important;
@@ -64,7 +57,7 @@ html
 }
 .nav-link
 {
-    color:#f2f2f2 !important;
+    color:white !important;
     font-family: montserrat !important;
 }
 
@@ -89,7 +82,7 @@ html
     flex-grow: 1;
     position: relative;
     float: left;
-    color: #f2f2f2;
+    color: rgb(68,80,92);
     text-align: center;
     text-decoration: none;
     font-size: 15px;
