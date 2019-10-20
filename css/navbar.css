@@ -20,6 +20,20 @@ html
     width: 100vw;
     overflow: auto;
 }
+#services
+{
+    background-color: blue;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+}
+#contact
+{
+    background-color: gainsboro;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+}
 @font-face /* This is for loading the font; Giving the name monserrat and load the font from given location*/
 {
     font-family: montserrat;
