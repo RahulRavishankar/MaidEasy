@@ -54,6 +54,6 @@
 #home .btn-get-started:hover {
     background: rgb(97, 13, 97);
     border: 2px solid rgb(97, 13, 97); /* When you hover the size shouldnt change*/ 
-    text-transform:uppercase;
-    
+    text-transform:uppercase; 
+    text-decoration: none;   
 }
