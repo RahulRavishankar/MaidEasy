@@ -5,8 +5,11 @@
 html
 {
     scroll-behavior: smooth;
+    overflow: -moz-scrollbars-none;
 }
-
+::-webkit-scrollbar { 
+    display: none; 
+} 
 #about
 {
     background-image: url(../img/Cleaning-Backgrounds-Desktop.bmp );
