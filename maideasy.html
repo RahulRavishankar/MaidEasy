@@ -10,6 +10,7 @@
         <link href="./css/home.css" rel="stylesheet"/>
         <link href="lib/bootstrap.min.css" rel="stylesheet"/>
         <link href="./css/about.css" rel="stylesheet"/> 
+        <link href="./css/contact.css" rel="stylesheet"/>
     </head>
 	<body>
         <div>
@@ -75,8 +76,47 @@
             <!-- TODO -->
         </div>
 
-        <div class = "block" id = "contact">
-            <!-- TODO -->
+        <div class = "block" id = "contact" style="color: white;">
+            <div class = "space-contact">&nbsp</div>
+            <div class = "contact-container">
+                <div id = "title" >CONTACT US</div>
+                <div>&nbsp</div>
+                <form id = "contact-form">
+                    <div id = "contact-fields">
+                        <div class = "fields">
+                            <div>NAME</div>
+                            <div>&nbsp</div>
+                            <div>EMAIL ID</div>
+                            <div>&nbsp</div>
+                            <div>SUBJECT</div>
+                            <div>&nbsp</div>
+                            <div>NEW COMMUNITY</div>
+                        </div>
+                        <div class = "inputs">
+                            <input class = "input-box" type="text" name="name">
+                            <div>&nbsp</div>
+                            <input class = "input-box" type="text" name="email">
+                            <div>&nbsp</div>
+                            <input class = "input-box" type="text" name="subject">
+                            <div>&nbsp</div>
+                            <div>
+                                YES <input class = "rad" type="radio" name = "new-community" value="yes" checked> 
+                                &nbsp &nbsp
+                                NO  <input class = "rad" type="radio" name = "new-community" value="no">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <textarea id = "message" placeholder="Enter Message Here..."></textarea>
+                    <br><br>
+                    <div align = "center">
+                        <input id = "message-submit" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            <div class = "space-contact2">&nbsp</div>
+            <div class = "image-box"> </div>
+            <div class = "space-contact2">&nbsp</div>
         </div>
     </body>
     
