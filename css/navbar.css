@@ -55,6 +55,25 @@ html
     font-family: montserrat !important;
 }
 
+.dropdown-menu    
+{
+    background-color: rgba(0,0,0,0.1) !important;
+    border-top:5px solid rgba(0,0,0,0.1) !important;
+}
+.center
+{
+    text-align: center !important;
+}
+.dropdown-item:hover
+{
+    background-color: transparent !important;
+}
+#more
+{
+    text-align: center;
+    font-size: 15px;
+    font-family: montserrat;
+}
 .name
 {
     flex-grow: 1;
