@@ -39,7 +39,7 @@ iframe
 {
     position: relative;
     flex-grow: 3;
-    margin-top: 220px;
+    margin-top: 160px;
     margin-bottom: 175px;
     border-radius: 15px;
 }
@@ -66,6 +66,7 @@ iframe
 .input-box
 {
     font-size: 9pt;
+    background-color: transparent;
 }
 
 #message
@@ -73,6 +74,14 @@ iframe
     border-radius: 10px;
     height: 100px;
     width: 100%;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+
+::placeholder
+{
+    color: white;
 }
 
 #message-submit
