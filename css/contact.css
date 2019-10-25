@@ -18,12 +18,7 @@
     position: relative;
     flex-grow: 3;
 }
-.space-contact2
-{
-    position: relative;
-    flex-grow: 2;
-}
-#contact .contact-container
+.contact-container
 {
     position: relative;
     display: flex;
@@ -32,7 +27,7 @@
     justify-content: center;
     align-items: left;
     text-align: left;
-    flex-grow: 3;
+    flex-grow: 4;
 }
 
 iframe
@@ -93,4 +88,9 @@ iframe
     align-items: center;
     background-color: rgb(52, 52, 241);
     color: white;
+}
+
+#message-submit:hover
+{
+    background-color: blue;
 }
