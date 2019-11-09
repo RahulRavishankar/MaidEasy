@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>MaidEasy</title>
+		<!-- ICON -->
+		<link href = "img/cleaning-ConvertImage.png" rel = "icon"/>
+
+		<!-- NAVBAR STYLESHEET -->
+        <link href="./css/navbar.css" rel="stylesheet"/>
+        <link href="./css/home.css" rel="stylesheet"/>
+        <link href="lib/bootstrap.min.css" rel="stylesheet"/>
+        <link href="./css/about.css" rel="stylesheet"/> 
+        <link href="./css/contact.css" rel="stylesheet"/>
+		<link href="./css/services.css" rel="stylesheet"/>
+		<link href="/css/login.css" rel="stylesheet"/>
+    </head>	
+	<body>
+		<div>
+			<nav id = "navbar" class="navbar navbar-expand-lg navbar-light shadow fixed-top" style = "background-color:transparent">
+				<div class="container" >
+					<a class="navbar-brand" href="#home">Maid Easy</a>
+						<button id = "navbar-ham" class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarResponsive">
+							<ul class="navbar-nav ml-auto">
+							<li class="nav-element current">
+								<a class="nav-link" href="#">Home
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<div class = "space" style = "color:transparent;">&nbsp</div>
+							<li class="nav-element">
+								<a class="nav-link" href="maideasy.html#about">About</a>
+							</li>
+							<div class = "space" style = "color:transparent;">&nbsp</div>
+							<li class="nav-element">
+								<a class="nav-link" href="maideasy.html#services">Services</a>
+							</li>
+							<div class = "space" style = "color:transparent;">&nbsp</div>
+							<li class="nav-element">
+								<a class="nav-link" href="maideasy.html#register">Register</a>
+							</li>
+							<div class = "space" style = "color:transparent;">&nbsp</div>
+							<li class="nav-element">
+								<a class="nav-link" href="maideasy.html#contact">Contact</a>
+							</li>
+							<div class = "space" style = "color:transparent;">&nbsp</div>
+							<li class="nav-item dropdown nav-element" id="more">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									More
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item nav-element" id="loginButton" style="color: white" href="login.html">Login</a>
+									<a class="dropdown-item nav-element" id="signupButton" style="color: white" href="signup.html">Sign Up</a>
+								</div>
+								</li>
+							</ul>
+						</div>
+				</div>
+			</nav>
+		</div>
+		<div class="loginbox">
+			<form action="Vote.php" method="post">
+				<p id="form-label"> Username </p>
+				<input type="email" name="VoterName" placeholder="xyz@example.com" required="email" > <br><br>
+				<p id="form-label"> Password</p>                             
+				<input type="text" name="FavoriteCharacterName" placeholder="Enter Password" required="text"> <br><br> 
+				<a href="#">Forgot Password?</a><br><br>  
+				<input type="submit" name="Submit" 
+					value="           SUBMIT           " >
+			</form>
+			<div>
+				<p style="color:white" id="create-account"> Don't have an account yet?
+				<br> <a href="#" id="create-account">Create an Account</a></p>
+			</div>
+		</div>	
+	</body>
+</html>
