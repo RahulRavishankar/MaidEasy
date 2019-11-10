@@ -1,0 +1,33 @@
+body{
+    background-color: blueviolet;
+}
+
+.request-fields{
+    
+    display:flex;
+    flex-direction: column;
+    flex-grow: 3;
+    margin-top:175px;
+}
+
+#name,#houseno,#payment,#work-tbd,#time{
+    position: relative;
+    margin-top: 25px;
+    margin-left: 200px;
+}
+
+.existing-requests{
+    float:right;
+    margin-top:0;
+    margin-right: 150px;
+    background-color: white;
+    width: 30%;
+    height: 400px;
+    overflow:scroll;
+}
+
+button{
+    width: 100px;
+    margin-top:30px;
+    margin-left: 300px;
+}
