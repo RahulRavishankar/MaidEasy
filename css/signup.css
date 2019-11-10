@@ -1,0 +1,49 @@
+body{
+    background: url("../img/computer-website-background-images.png");
+    background-size: 100%;
+}
+
+img{
+    float:right;
+    margin-right: 150px;
+    width:350px;
+}
+
+h2.heading{
+    color:white;
+    margin-left: 130px;
+    font-family: montserrat-bold;
+}
+/*div.input-fields{
+    
+    
+}*/
+label.labels{
+    font-size:16;
+    width:400px;
+    text-align: right;
+    color: white;
+    
+    
+}
+#name,#email,#type,#houseno,#helper-name,#community-name,#worktype-dropdown{
+    border-color: white;
+    font-size: 16;
+    width:400px;
+    padding-left: 15px;
+    padding-right: 10px;
+    font-family: montserrat;
+    background-color: transparent;
+    
+}   
+
+#register-button{
+    border-radius:25px;
+    border-color: #084FD0;
+    color:white;
+    background-color: #084FD0;
+    margin-left: 350px;
+    font-size: 18;
+    width: 200px;
+    font-family: montserrat-bold;
+}

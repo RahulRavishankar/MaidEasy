@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Register</title>
+        <!-- ICON -->
+		<link href = "img/cleaning-ConvertImage.png" rel = "icon"/>
+
+		<!-- NAVBAR STYLESHEET -->
+        <link href="./css/navbar.css" rel="stylesheet"/>
+        <link href="./css/home.css" rel="stylesheet"/>
+        <link href="lib/bootstrap.min.css" rel="stylesheet"/>
+        <link href="./css/about.css" rel="stylesheet"/> 
+        <link href="./css/contact.css" rel="stylesheet"/>
+        <link href="./css/services.css" rel="stylesheet"/>
+        <link href="./css/signup.css" rel="stylesheet"/>
+        <!--<link href="mynavbar.css" rel="stylesheet">  -->
+    </head>
+    <body>
+        <div>
+            <nav id = "navbar" class="navbar navbar-expand-lg navbar-light shadow fixed-top" style = "background-color:transparent">
+                <div class="container" >
+                    <a class="navbar-brand" href="maideasy.html#home">Maid Easy</a>
+                        <button id = "navbar-ham" class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav ml-auto">
+                            <li class="nav-element current">
+                                <a class="nav-link" href="maideasy.html#home">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <div class = "space" style = "color:transparent;">&nbsp</div>
+                            <li class="nav-element">
+                                <a class="nav-link" href="maideasy.html#about">About</a>
+                            </li>
+                            <div class = "space" style = "color:transparent;">&nbsp</div>
+                            <li class="nav-element">
+                                <a class="nav-link" href="maideasy.html#services">Services</a>
+                            </li>
+                            <div class = "space" style = "color:transparent;">&nbsp</div>
+                            <li class="nav-element">
+                                <a class="nav-link" href="maideasy.html#register">Register</a>
+                            </li>
+                            <div class = "space" style = "color:transparent;">&nbsp</div>
+                            <li class="nav-element">
+                                <a class="nav-link" href="maideasy.html#contact">Contact</a>
+                            </li>
+                            <div class = "space" style = "color:transparent;">&nbsp</div>
+                            <li class="nav-item dropdown nav-element" id="more">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  More
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item nav-element" id="loginButton" style="color: white" href="login.html">Login</a>
+                                  <a class="dropdown-item nav-element" id="signupButton" style="color: white" href="signup.html">Sign Up</a>
+                                </div>
+                              </li>
+                            </ul>
+                        </div>
+                </div>
+            </nav>
+        </div>
+        <br><br><br>
+        <div class="input-img">
+            <img src="./test.jpg" alt="Add image here">
+            <br>
+            <h2 class="heading">SIGN UP</h2>
+            <br><br>
+            <div class="input-fields">
+                <label for ="name" class="labels">NAME<span style="color: transparent;">007Space</span></label><input type="text" id="name"><br><br>
+                <label for ="email" class="labels">HOUSE NO.<span style="color: transparent;">007Space</span> </label><input type="number" id="houseno"><br><br>
+                <label for ="type" class="labels"> HELPER NAME <span style="color: transparent;">007Space</span></label><input type="text" id="helper-name"><br><br>
+                <label for ="name" class="labels">WORK TYPE  <span style="color: transparent;">007Space</span></label>    
+                    <select id="worktype-dropdown">
+                        <option>ffbdfv</option>
+                        <option>ffbddbffv</option>
+                        <option>fdfbfbddfv</option>
+                        <option>ffdbfbdfv</option>
+                    </select><br><br>
+                <label for ="name" class="labels">TIME SLOT <span style="color: transparent;">007Space</span></label><input type="text" id="name"><br><br>  <!-- Fill this -->
+                <label for ="name" class="labels">COMMUNITY NAME <span style="color: transparent;">007Space</span></label><input type="text" id="community-name">
+            </div>  
+            <br><br><br><br>
+            <div >
+                <button type="submit" id="register-button" style="float:left; ">
+                    Submit
+                </button>
+            </div>
+        </div>  
+    </body>
+</html>
