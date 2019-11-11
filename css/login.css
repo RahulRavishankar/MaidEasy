@@ -44,7 +44,7 @@ body
 	font-size: 16;
 
 }
-.loginbox input[type="text"]
+.loginbox input[type="text"],.loginbox input[type="password"]
 {
 	border:none;
 	border-bottom: 1px solid #fff;
