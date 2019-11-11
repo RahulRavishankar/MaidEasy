@@ -2,7 +2,7 @@
 
 $hostname="localhost";
 $user="root";
-$password="";
+$pass="";
 $database="MaidEasy";
 
 $username=$_POST["username"];  
@@ -12,7 +12,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 //Connecting to the Server
 try
 {
-	$connect=mysqli_connect($hostname,$user,$password);
+	$connect=mysqli_connect($hostname,$user,$pass);
 }catch(Exception $ex)
 { echo 'Sorry, Couldn\'t Connect'; }
 
@@ -27,7 +27,7 @@ if(mysqli_select_db($connect,$database))
 $sql="SELECT * FROM Account_details WHERE Username='$username' AND Password='$password' ";
 $result=mysqli_query($connect,$sql);
 $row=mysqli_fetch_array($result);
-if($row['username']==$username && $row['password']==$password)
+if($row['Username']==$username && $row['Password']==$password)
 if(mysqli_query($connect,$sql))
 {
 	echo 'Login Successful';
@@ -35,7 +35,7 @@ if(mysqli_query($connect,$sql))
 else{
     echo 'Login Failed';
 }
-header("Location:login.html");
+//header("Location:login.html");
 
 // closing connection
 mysqli_close($connect);
