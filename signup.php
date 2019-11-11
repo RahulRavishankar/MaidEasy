@@ -2,11 +2,11 @@
 
 $hostname="localhost";
 $user="root";
-$password="";
+$pass="";
 $database="MaidEasy";
 
 $username=$_POST["Name"];  
-//$password=$_POST["passwd"];
+$password=$_POST["Password"];
 $houseno=$_POST["Houseno"];
 $helpername=$_POST["HelperName"];
 $worktype=$_POST["WorkType"];
@@ -17,7 +17,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 //Connecting to the Server
 try
 {
-	$connect=mysqli_connect($hostname,$user,$password);
+	$connect=mysqli_connect($hostname,$user,$pass);
 }catch(Exception $ex)
 { echo 'Sorry, Couldn\'t Connect'; }
 
@@ -29,11 +29,11 @@ if(mysqli_select_db($connect,$database))
 }  
 
 //Insert Values
-$sql="INSERT INTO `signup_table`(`Name`, `House_no`, `Helper_name`, `WorkType`, `TimeSlot`, `Community_Name`) 
-VALUES ('$username','$houseno','$helpername','$worktype','$timeslot','$communityname') ";
+$sql="INSERT INTO `signup_table`(`Name`,`Password`, `House_no`, `Helper_name`, `WorkType`, `TimeSlot`, `Community_Name`) 
+VALUES ('$username','$password','$houseno','$helpername','$worktype','$timeslot','$communityname') ";
 if(mysqli_query($connect,$sql))
 {
-	//echo 'Data added successfully!';
+	echo '<script>console.log("Data added successfully!");</script>';
 }
 header("Location:login.html");
 
