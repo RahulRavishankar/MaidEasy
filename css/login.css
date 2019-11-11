@@ -2,23 +2,25 @@ body
 {
 	margin:0;
 	padding:0;
-	background:url(../img/Background.jpg); 
+	background:url(../img/login-bg-f.jpg); 
 	font-family:sans-serif;
+	background-size:100%;
 
 }
 .loginbox
 {
-	width:320px;
-	height: 360px;
-	background:#000;
+	width:400px;
+	height: 500px;
+	background:rgba(0,0,0,0.65);
 	color:#fff;
-	top:60%;
-	left:65%;
+	top:50%;
+	left:50%;
 	position:absolute;
 	transform:translate(-50%,-50%);
 	box-sizing: border-box;
 	padding-left:60px;
-	padding-top: 30px;
+	padding-top: 50px; 
+	border-radius:20px;
 }
 
 .loginbox p#form-label
@@ -50,7 +52,8 @@ body
 	border-bottom: 1px solid #fff;
 	background:transparent;
 	outline:none;
-	height:40px; 
+	height:40px;
+	width:80%; 
 	color:#fff;
 	font-size: 16;
 	margin-bottom: -30px;
