@@ -84,3 +84,7 @@ body
 #create-account{
 	font-size:13px;
 }
+
+::placeholder{
+	color:grey;
+}
