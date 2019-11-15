@@ -1,0 +1,116 @@
+.register-bg
+{
+    background-image: url(../img/lukas-ter-poorten-paAJDCYNq-0-unsplash.jpg);
+}
+
+#title
+{
+    margin-top: 160px;
+    font-size: 13pt;
+    flex-grow: 1;
+    justify-content: end;
+}
+
+#register
+{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.534);
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#register-form
+{
+    flex-grow: 100;
+}
+.space-register
+{
+    position: relative;
+    flex-grow: 3;
+}
+.register-container
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: montserrat;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    flex-grow: 4;
+}
+
+iframe
+{
+    position: relative;
+    flex-grow: 3;
+    margin-top: 160px;
+    margin-bottom: 175px;
+    border-radius: 15px;
+}
+
+#register-fields
+{
+    display: flex;
+    flex-direction: row;
+}
+.fields
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.inputs
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.input-box
+{
+    font-size: 9pt;
+    background-color: transparent;
+    color:white;
+}
+
+.community
+{
+    font-size: 14pt;
+}
+
+#message
+{
+    border-radius: 10px;
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+
+::placeholder
+{
+    color: white;
+}
+
+#message-submit
+{
+    border: transparent;
+    border-radius: 20px;
+    height: 40px;
+    width: 30%;
+    align-items: center;
+    background-color: rgb(52, 52, 241);
+    color: white;
+}
+
+#message-submit:hover
+{
+    background-color: blue;
+}

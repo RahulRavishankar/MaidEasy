@@ -1,0 +1,104 @@
+<head>
+    <title>Register</title>
+    <!-- ICON -->
+    <link href = "img/cleaning-ConvertImage.png" rel = "icon"/>
+
+    <!-- NAVBAR STYLESHEET -->
+    <link href="./css/navbar.css" rel="stylesheet"/>
+    <link href="./css/register.css" rel="stylesheet"/>
+    <link href="lib/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <div>
+        <nav id = "navbar" class="navbar navbar-expand-lg navbar-light shadow fixed-top" style = "background-color:transparent">
+            <div class="container" >
+                <a class="navbar-brand" href="#home">Maid Easy</a>
+                    <button id = "navbar-ham" class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                        <li class="nav-element">
+                            <a class="nav-link" href="maideasy.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <div class = "space" style = "color:transparent;">&nbsp</div>
+                        <li class="nav-element">
+                            <a class="nav-link" href="maideasy.html#about">About</a>
+                        </li>
+                        <div class = "space" style = "color:transparent;">&nbsp</div>
+                        <li class="nav-element">
+                            <a class="nav-link" href="maideasy.html#services">Services</a>
+                        </li>
+                        <div class = "space" style = "color:transparent;">&nbsp</div>
+                        <li class="nav-element current">
+                            <a class="nav-link" href="maideasy.html#register">Register</a>
+                        </li>
+                        <div class = "space" style = "color:transparent;">&nbsp</div>
+                        <li class="nav-element">
+                            <a class="nav-link" href="maideasy.html#contact">Contact</a>
+                        </li>
+                        <div class = "space" style = "color:transparent;">&nbsp</div>
+                        <li class="nav-item dropdown nav-element" id="more">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item nav-element" id="loginButton" style="color: white" href="login.html">Login</a>
+                            <a class="dropdown-item nav-element" id="signupButton" style="color: white" href="signup.html">Sign Up</a>
+                            </div>
+                        </li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class = "register-bg">
+            <div class = "block" id = "register" style="color: white;">
+                <div class = "container" style = "display: flex;">
+                    <div class = "register-container">
+                            <div id = "title" >REGISTER</div>
+                            <div>&nbsp</div>
+                            <div>&nbsp</div>
+                            <form id = "register-form">
+                                <div id = "register-fields">
+                                    <div class = "fields">
+                                        <div>NAME</div>
+                                        <div>&nbsp</div>
+                                        <div>EMAIL ID</div>
+                                        <div>&nbsp</div>
+                                        <div>TYPE</div>
+                                    </div>
+                                    <div class = "inputs">
+                                        <input class = "input-box" type="text" name="name">
+                                        <div>&nbsp</div>
+                                        <input class = "input-box" type="text" name="email">
+                                        <div>&nbsp</div>
+                                        <div class = "community">
+                                            <input class = "rad" type="radio" name = "community-type" value="Apartment" checked> Apartment  
+                                            <br>
+                                            <input class = "rad" type="radio" name = "community-type" value="Gated"> Gated Community
+                                            <br>
+                                            <input class = "rad" type="radio" name = "community-type" value="Independent"> Independent House  
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>&nbsp</div>
+                                <div>&nbsp</div>
+                                <div>&nbsp</div>
+                                <div>&nbsp</div>
+                                <div align = "center">
+                                    <input id = "message-submit" type="submit" value="Submit">
+                                </div>
+                            </form>
+                    </div>
+                    <div class = "space-register">&nbsp</div>
+                    <!-- GOOGLE MAP LOCTAION OF COLLEGE -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5831053856305!2d77.53232771477025!3d12.934494790880208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e468d8d36d3%3A0x694d74f6ac640acf!2sPES%20University!5e0!3m2!1sen!2sin!4v1571836525650!5m2!1sen!2sin"></iframe>
+                </div>
+            </div>
+        </div>
+</body>
