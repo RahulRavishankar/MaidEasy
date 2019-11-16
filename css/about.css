@@ -33,3 +33,10 @@
     display:flex;
     flex-direction: column;
 }
+
+.TextToBeWritten
+{
+    color:white;
+    margin-left:215px;
+    font-size:large;
+}

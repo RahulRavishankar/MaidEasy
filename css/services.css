@@ -9,7 +9,7 @@
 }
 div.services-container{
     display:inline-flex;
-    margin:55px;
+    margin:200px;
     margin-top: 80px;
 
 }
@@ -17,8 +17,8 @@ div.services-container{
   position: relative;
   width: 350px;
   height: 400px;
-  margin-left:60px;
-  margin-right:60px;
+  margin-left:10px;
+  margin-right:15px;
   margin-top:0px; 
   background-color: rgba(0, 0, 0,0.65);
   text-align: center;
