@@ -1,3 +1,12 @@
+<?php
+	session_start();
+	if(isset($_SESSION["Username"]))
+	{
+		echo "<script>alert('Already Logged in');</script>";
+		header("maideasy.html");
+	}
+?>
+
 <!DOCTYPE html>
 <html lang = "en">
 	<head>
@@ -51,8 +60,13 @@
 									More
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item nav-element" id="loginButton" style="color: white" href="login.html">Login</a>
-									<a class="dropdown-item nav-element" id="signupButton" style="color: white" href="signup.html">Sign Up</a>
+									<?php if(!isset($_SESSION["Username"])){ ?>
+                                        <a class="dropdown-item nav-element" id="loginButton" style="color: white" href="loginpage.php">Login</a>
+                                        <a class="dropdown-item nav-element" id="signupButton" style="color: white" href="signuppage.php">Sign Up</a>
+                                    <?php } else { ?>
+                                        <a class="dropdown-item nav-element" id="logoutButton" style="color: white" href="requestpage.php">Request</a>
+                                        <a class="dropdown-item nav-element" id="logoutButton" style="color: white" href="logout.php">Logout</a>
+                                    <?php } ?>
 								</div>
 								</li>
 							</ul>

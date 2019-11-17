@@ -13,6 +13,7 @@ $worktype=$_POST["WorkType"];
 $timeslot=$_POST["TimeSlot"];
 $communityname=$_POST["CommunityName"];
 
+session_start();
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 //Connecting to the Server
 try

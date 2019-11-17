@@ -8,6 +8,8 @@ $database="MaidEasy";
 $username=$_POST["username"];  
 $password=$_POST["passwd"]; 
 
+session_start();
+
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 //Connecting to the Server
 try
@@ -20,7 +22,7 @@ try
 //Selecting the database
 if(mysqli_select_db($connect,$database))
 {
-	echo "<script>alert('Database selected');console.log('Database selected');</script>";
+	echo "<script>console.log('Database selected');</script>";
 }  
 
 //Compare username and Password
@@ -28,14 +30,16 @@ $sql="SELECT * FROM Account_details WHERE Username='$username' AND Password='$pa
 $result=mysqli_query($connect,$sql);
 $row=mysqli_fetch_array($result);
 if($row['Username']==$username && $row['Password']==$password)
-if(mysqli_query($connect,$sql))
 {
-	echo 'Login Successful';
+	echo '<script>alert("Login Successful");</script>';
+	$_SESSION["Username"]=$username;
+	$_SESSION["Password"]=$password;
+	header("Location:maideasy.php");
 }
 else{
-    echo 'Login Failed';
+	echo '<script>alert("Login Failed");</script>';
+	header("Location:loginpage.php");
 }
-//header("Location:login.html");
 
 // closing connection
 mysqli_close($connect);

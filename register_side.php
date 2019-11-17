@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <head>
     <title>Register</title>
     <!-- ICON -->
@@ -19,25 +22,25 @@
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                         <li class="nav-element">
-                            <a class="nav-link" href="maideasy.html">Home
+                            <a class="nav-link" href="maideasy.php">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <div class = "space" style = "color:transparent;">&nbsp</div>
                         <li class="nav-element">
-                            <a class="nav-link" href="maideasy.html#about">About</a>
+                            <a class="nav-link" href="maideasy.php#about">About</a>
                         </li>
                         <div class = "space" style = "color:transparent;">&nbsp</div>
                         <li class="nav-element">
-                            <a class="nav-link" href="maideasy.html#services">Services</a>
+                            <a class="nav-link" href="maideasy.php#services">Services</a>
                         </li>
                         <div class = "space" style = "color:transparent;">&nbsp</div>
                         <li class="nav-element current">
-                            <a class="nav-link" href="maideasy.html#register">Register</a>
+                            <a class="nav-link" href="maideasy.php#register">Register</a>
                         </li>
                         <div class = "space" style = "color:transparent;">&nbsp</div>
                         <li class="nav-element">
-                            <a class="nav-link" href="maideasy.html#contact">Contact</a>
+                            <a class="nav-link" href="maideasy.php#contact">Contact</a>
                         </li>
                         <div class = "space" style = "color:transparent;">&nbsp</div>
                         <li class="nav-item dropdown nav-element" id="more">
@@ -45,8 +48,13 @@
                             More
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item nav-element" id="loginButton" style="color: white" href="login.html">Login</a>
-                            <a class="dropdown-item nav-element" id="signupButton" style="color: white" href="signup.html">Sign Up</a>
+                                <?php if(!isset($_SESSION["Username"])){ ?>
+                                    <a class="dropdown-item nav-element" id="loginButton" style="color: white" href="loginpage.php">Login</a>
+                                    <a class="dropdown-item nav-element" id="signupButton" style="color: white" href="signuppage.php">Sign Up</a>
+                                <?php } else { ?>
+                                    <a class="dropdown-item nav-element" id="logoutButton" style="color: white" href="requestpage.php">Request</a>
+                                    <a class="dropdown-item nav-element" id="logoutButton" style="color: white" href="logout.php">Logout</a>
+                                <?php } ?>
                             </div>
                         </li>
                         </ul>

@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
     include('request.php');
     //save data to php
     if(isset($_POST["clicked-submit"])){
