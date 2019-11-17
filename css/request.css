@@ -1,5 +1,6 @@
 body{
-    background-color: blueviolet;
+    /*background-color: blueviolet; */
+    background: url('../img/andy-fitzsimon-nHhGuO-2YPw-unsplash.jpg');
 }
 
 .request-fields{
@@ -7,27 +8,51 @@ body{
     display:flex;
     flex-direction: column;
     flex-grow: 3;
-    margin-top:175px;
+    margin-top:200px;
 }
 
 #name,#houseno,#payment,#work-tbd,#time{
     position: relative;
     margin-top: 25px;
-    margin-left: 200px;
+    margin-left: 100px;
+    width: 300px;
+    background:transparent;
+    color:black;
+    
 }
 
+#name::placeholder,#houseno::placeholder,#payment::placeholder,#work-tbd::placeholder,#time::placeholder{ 
+    color:black;
+}
+.sub{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 200px;
+    width:100px;
+    border-radius: 25px;
+    
+}
 .existing-requests{
     float:right;
     margin-top:0;
-    margin-right: 150px;
-    background-color: white;
-    width: 30%;
+    margin-right: 100px;
+    background-color:white; 
+    width: 60%;
     height: 400px;
     overflow:scroll;
+    color:black;
+    border-color: black;
+    padding:10px;
 }
 
 button{
-    width: 100px;
-    margin-top:30px;
-    margin-left: 300px;
+    border-radius:25px; background-color:blue; border-color:blue; color:white;
 }
+
+/*style="border-radius:25px; background-color:blue; border-color:blue; color:white;" */
+/*<?php if($_SESSION["Username"]==$row["Name"]){ ?> 
+    Status:<?php echo $row['Status']; ?>
+    <?php }else{ ?>
+        <button onclick="()=>{<?php mysqli_query($connect,'UPDATE `requests` SET `Status`=`Accepted` where Name=$_SESSION[`Username`]');  ?>}">
+        ACCEPT</button>  
+    <?php } ?>  */

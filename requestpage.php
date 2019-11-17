@@ -72,14 +72,14 @@
         </div>
         <div class="existing-requests">
             <!--TO BE DONE-->
-            <h4 style="text-align: center; margin-top:15px; font-family:montserrat;">Your Requests</h4>
+            <h4 style="text-align: center; margin-top:15px; font-family:montserrat;">All Requests</h4>
             <div id="add-requests"></div>
             <!--<img src="/img/cooking.jpg"> -->
         </div>
         <div class="request-fields">
             <form method="POST">
                 <input type="text" id="name" placeholder="Your Name" name="Name"><br>
-                <input type="text" id="houseno" placeholder="Your House No."/ name="HouseNo"><br>
+                <input type="text" id="houseno" placeholder="Your House No." name="HouseNo"><br>
                 <select id="work-tbd" name="WorkType">
                     <option>Cooking</option>
                     <option>Washing</option>
@@ -91,7 +91,7 @@
                     <option>10.00 - 11.00am</option>
                 </select><br>
                 <input type="number" id="payment" placeholder="You want to pay" name="Pay" /><br>
-                <input type="submit" class="sub" value="Submit" /> <br>
+                <input type="submit" class="sub" value="REQUEST" /> <br>
             </form>
         </div>
     </body>
@@ -100,7 +100,6 @@
     <script src="lib/bootstrap.bundle.min.js"></script>
     <script src="lib/active-block.js"></script>
     <script src="lib/navbar.js"></script>
-    <!--<script id="source" src="lib/request.js"></script> -->
     <script>
         $(document).ready(function(){
             //alert("Jquery is working");

@@ -22,7 +22,7 @@ try
 //Selecting the database
 if(mysqli_select_db($connect,$database))
 {
-	//echo "<script>alert('Database selected');console.log('Database selected');</script>";
+	echo "<script>console.log('Database selected');</script>";
 }  
 
 // closing connection

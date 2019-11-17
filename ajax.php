@@ -11,8 +11,8 @@
 
         
         //Insert Values
-        $sql="INSERT INTO `requests`(`Name`, `House`, `Work_Type`, `Time`, `Pay`)
-        VALUES ('$name','$houseno','$worktype','$time','$pay') ";
+        $sql="INSERT INTO `requests`(`Name`, `House`, `Work_Type`, `Time`, `Pay`,`Status`)
+        VALUES ('$name','$houseno','$worktype','$time','$pay','') ";
         if(mysqli_query($connect,$sql))
         {
             echo '<script>console.log("Data added successfully!");</script>';
@@ -24,13 +24,15 @@
         $result=mysqli_query($connect,"SELECT * FROM requests"); 
         while($row=mysqli_fetch_array($result))
         {?> 
-            <div id="">
+            <div>
             <p>
-                Name: <?php echo $row['Name']; ?><br>
-                House No.:<?php echo $row['House']; ?> <br>
-                WorkType: <?php echo $row['Work_Type']; ?> <br>
-                Time: <?php echo $row['Time']; ?> <br>
-                Willing to Pay: &#x20B9; <?php echo $row['Pay']; ?> 
+                Name: <?php echo $row['Name']?><span style="color: transparent;">Space</span>
+                HouseNo.:<?php echo $row['House']; ?> <span style="color: transparent;">Space</span>
+                Task: <?php echo $row['Work_Type']; ?><span style="color: transparent;">Space</span>
+                Time: <?php echo $row['Time']; ?> <span style="color: transparent;">Space</span>
+                Payment: &#x20B9; <?php echo $row['Pay']; ?><span style="color: transparent;">Space</span> 
+                Status:<?php echo $row['Status']; ?>
+                <input type="checkbox" />Accept
             </p>
             </div>
         <?php
