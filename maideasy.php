@@ -150,7 +150,7 @@
                         <br><br><h2>WASHING</h2>
                         <div class="overlay">
                             <h3 class="overlay-title">Washing</h3>
-                            <div class="text">Text to be added</div>
+                            <div class="text">Text to be added</div> <!--Includes Washing clothes with detergents, pressing and folding dried clothes-->
                         </div>
                     </div>
                 </div>

@@ -78,9 +78,9 @@
         </div>
         <div class="request-fields">
             <form method="POST">
-                <input type="text" id="name" placeholder="Your Name" name="Name"><br>
-                <input type="text" id="houseno" placeholder="Your House No." name="HouseNo"><br>
-                <select id="work-tbd" name="WorkType">
+                <input type="text" id="name" placeholder="Your Name" name="Name" required><br>
+                <input type="text" id="houseno" placeholder="Your House No." name="HouseNo" required><br>
+                <select id="work-tbd" name="WorkType" required>
                     <option>Cooking</option>
                     <option>Washing</option>
                     <option>Cleaning</option>
@@ -90,7 +90,7 @@
                     <option>9.00 - 10.00am</option>
                     <option>10.00 - 11.00am</option>
                 </select><br>
-                <input type="number" id="payment" placeholder="You want to pay" name="Pay" /><br>
+                <input type="number" id="payment" placeholder="You want to pay" name="Pay" required/><br>
                 <input type="submit" class="sub" value="REQUEST" /> <br>
             </form>
         </div>
