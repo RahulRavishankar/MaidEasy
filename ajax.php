@@ -25,8 +25,13 @@
         while($row=mysqli_fetch_array($result))
         {?> 
             <div id="">
-                <p><?php echo $row['Name']; ?></p>
-                <p><?php echo $row['House']; ?></p>
+            <p>
+                Name: <?php echo $row['Name']; ?><br>
+                House No.:<?php echo $row['House']; ?> <br>
+                WorkType: <?php echo $row['Work_Type']; ?> <br>
+                Time: <?php echo $row['Time']; ?> <br>
+                Willing to Pay: &#x20B9; <?php echo $row['Pay']; ?> 
+            </p>
             </div>
         <?php
         }

@@ -64,6 +64,7 @@
         <div class="existing-requests">
             <!--TO BE DONE-->
             <h4 style="text-align: center; margin-top:15px; font-family:montserrat;">Your Requests</h4>
+            <div id="add-requests"></div>
             <!--<img src="/img/cooking.jpg"> -->
         </div>
         <div class="request-fields">
@@ -136,7 +137,7 @@
                     "display":1
                 },
                 success:function(d){
-                    $(".existing-requests").html(d);
+                    $("#add-requests").html(d);
                 }
             })
         }
