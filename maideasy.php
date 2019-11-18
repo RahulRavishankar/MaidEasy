@@ -222,30 +222,36 @@
         </div>
 
         <!-- End of Register -->
-
+        
+        <!-- Contact -->
+        <?php
+            $nameErr = $emailErr = $communityErr = $messageErr = $subjectErr = "";
+            $name = $email = $newCommunity = $message = $subject ="";
+            include('contact_validate.php');
+        ?>
         <div class = "contact-bg">
             <div class = "block" id = "contact" style="color: white;">
                 <div class = "container" style = "display: flex;">
                     <div class = "contact-container">
                             <div id = "title" >CONTACT US</div>
                             <div>&nbsp</div>
-                            <form id = "contact-form">
+                            <form id = "contact-form" method="post" action="maideasy.php#contact">
                                 <div id = "contact-fields">
                                     <div class = "fields">
-                                        <div>NAME</div>
+                                        <div>NAME <span class="error" style = "color:red;"> <?php echo $nameErr;?></span></div>
                                         <div>&nbsp</div>
-                                        <div>EMAIL ID</div>
+                                        <div>EMAIL ID <span class="error" style = "color:red;"> <?php echo $emailErr;?></div>
                                         <div>&nbsp</div>
-                                        <div>SUBJECT</div>
+                                        <div>SUBJECT <span class="error" style = "color:red;"> <?php echo $subjectErr;?></div>
                                         <div>&nbsp</div>
-                                        <div>NEW COMMUNITY</div>
+                                        <div>NEW COMMUNITY <span class="error" style = "color:red;"> <?php echo $communityErr;?></div>
                                     </div>
                                     <div class = "inputs">
-                                        <input class = "input-box" type="text" name="name">
+                                        <input class = "input-box" type="text" name="name" value = "<?php echo $name?>" >
                                         <div>&nbsp</div>
-                                        <input class = "input-box" type="text" name="email">
+                                        <input class = "input-box" type="text" name="email" value = "<?php echo $email?>">
                                         <div>&nbsp</div>
-                                        <input class = "input-box" type="text" name="subject">
+                                        <input class = "input-box" type="text" name="subject" value = "<?php echo $subject?>">
                                         <div>&nbsp</div>
                                         <div>
                                             YES <input class = "rad" type="radio" name = "new-community" value="yes" checked> 
@@ -255,7 +261,8 @@
                                     </div>
                                 </div>
                                 <br>
-                                <textarea id = "message" placeholder="Enter Message Here..."></textarea>
+                                <textarea name ="message" id = "message" placeholder="Enter Message Here..." ><?php echo $message?></textarea>
+                                <span class="error" style = "color:red;"><?php echo $messageErr;?> </span>
                                 <br><br>
                                 <div align = "center">
                                     <input id = "message-submit" type="submit" value="Submit">
