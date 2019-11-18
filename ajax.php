@@ -23,17 +23,15 @@
     if(isset($_POST["display"])){
         $result=mysqli_query($connect,"SELECT * FROM requests"); 
         while($row=mysqli_fetch_array($result))
-        {?> 
-            <?php echo '<tr>'; ?>
-                <?php echo '<td>'.$row['Name'].'</td>'?>
-                <?php echo '<td>'.$row['House'].'</td>'; ?>
-                <?php echo '<td>'.$row['Work_Type'].'</td>'; ?>
-                <?php echo '<td>'.$row['Time'].'</td>'; ?>
-                <?php echo '<td>&#x20B9;'.$row['Pay'].'</td>'; ?>
-                <?php echo '<td>'.$row['Status'].'</td>'; ?>
-                <?php echo '<td><input type="button" onclick="alert("Accepted");"  value="Accept"/></td>'; ?>
-            <?php echo '</tr>'; ?>
-        <?php
+        {   echo '<tr>'; 
+                echo '<td>'.$row['Name'].'</td>';
+                echo '<td>'.$row['House'].'</td>';
+                echo '<td>'.$row['Work_Type'].'</td>'; 
+                echo '<td>'.$row['Time'].'</td>'; 
+                echo '<td>&#x20B9;'.$row['Pay'].'</td>'; 
+                echo '<td>'.$row['Status'].'</td>'; 
+                echo '<td><input type="button" onclick="alert(`Accepted`);"  value="Accept"/></td>'; 
+            echo '</tr>'; 
         }
         exit();
 

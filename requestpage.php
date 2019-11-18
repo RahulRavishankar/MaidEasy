@@ -82,7 +82,7 @@
                 <th>Payment</th>
                 <th>Status</th>
             </tr>
-            <div id="add-requests"></div>
+            <div id="add-requests"></div> 
             </table>
         </div>
         <div class="request-fields">
