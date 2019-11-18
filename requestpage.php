@@ -73,8 +73,17 @@
         <div class="existing-requests">
             <!--TO BE DONE-->
             <h4 style="text-align: center; margin-top:15px; font-family:montserrat;">All Requests</h4>
+            <table>
+            <tr>
+                <th>Name</th>
+                <th>House No.</th>
+                <th>Task</th>
+                <th>Time</th>
+                <th>Payment</th>
+                <th>Status</th>
+            </tr>
             <div id="add-requests"></div>
-            <!--<img src="/img/cooking.jpg"> -->
+            </table>
         </div>
         <div class="request-fields">
             <form method="POST">
@@ -129,7 +138,7 @@
                         $("#houseno").val('');
                         $("#work-tbd").val('');
                         $("#time").val('');
-                        $("#payment").val('s');
+                        $("#payment").val('');
 
                     }
                 });
