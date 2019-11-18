@@ -23,15 +23,19 @@
     if(isset($_POST["display"])){
         $result=mysqli_query($connect,"SELECT * FROM requests"); 
         while($row=mysqli_fetch_array($result))
-        {   echo '<tr>'; 
-                echo '<td>'.$row['Name'].'</td>';
-                echo '<td>'.$row['House'].'</td>';
-                echo '<td>'.$row['Work_Type'].'</td>'; 
-                echo '<td>'.$row['Time'].'</td>'; 
-                echo '<td>&#x20B9;'.$row['Pay'].'</td>'; 
-                echo '<td>'.$row['Status'].'</td>'; 
-                echo '<td><input type="button" onclick="alert(`Accepted`);"  value="Accept"/></td>'; 
-            echo '</tr>'; 
+        { ?> 
+            <div>
+            <p>
+                Name: <?php echo $row['Name']?><span style="color: transparent;">Space</span>
+                HouseNo.:<?php echo $row['House']; ?> <span style="color: transparent;">Space</span>
+                Task: <?php echo $row['Work_Type']; ?><span style="color: transparent;">Space</span>
+                Time: <?php echo $row['Time']; ?> <span style="color: transparent;">Space</span>
+                Payment: &#x20B9; <?php echo $row['Pay']; ?><span style="color: transparent;">Space</span> 
+                Status:<?php echo $row['Status']; ?>
+                <input type="checkbox" />Accept
+            </p>
+            </div>
+        <?php 
         }
         exit();
 
