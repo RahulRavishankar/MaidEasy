@@ -1,9 +1,9 @@
 <?php
-
+header("Location:loginpage.php");
 $hostname="localhost";
-$user="root";
-$pass="";
-$database="MaidEasy";
+$user="id11646649_root";
+$pass="password";
+$database="id11646649_maideasy";
 
 $username=$_POST["Name"];  
 $password=$_POST["Password"];
@@ -36,8 +36,6 @@ if(mysqli_query($connect,$sql))
 {
 	echo '<script>console.log("Data added successfully!");</script>';
 }
-header("Location:loginpage.php");
-
 // closing connection
 mysqli_close($connect);
 ?>

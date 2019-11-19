@@ -1,8 +1,8 @@
 <?php
 $hostname="localhost";
-$user="root";
-$pass="";
-$database="MaidEasy";
+$user="id11646649_root";
+$pass="password";
+$database="id11646649_maideasy";
 
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
