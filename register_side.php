@@ -22,25 +22,25 @@
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                         <li class="nav-element">
-                            <a class="nav-link" href="index.php">Home
+                            <a class="nav-link" href="maideasy.php">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <div class = "space" style = "color:transparent;">&nbsp</div>
                         <li class="nav-element">
-                            <a class="nav-link" href="index.php#about">About</a>
+                            <a class="nav-link" href="maideasy.php#about">About</a>
                         </li>
                         <div class = "space" style = "color:transparent;">&nbsp</div>
                         <li class="nav-element">
-                            <a class="nav-link" href="index.php#services">Services</a>
+                            <a class="nav-link" href="maideasy.php#services">Services</a>
                         </li>
                         <div class = "space" style = "color:transparent;">&nbsp</div>
                         <li class="nav-element current">
-                            <a class="nav-link" href="index.php#register">Register</a>
+                            <a class="nav-link" href="maideasy.php#register">Register</a>
                         </li>
                         <div class = "space" style = "color:transparent;">&nbsp</div>
                         <li class="nav-element">
-                            <a class="nav-link" href="index.php#contact">Contact</a>
+                            <a class="nav-link" href="maideasy.php#contact">Contact</a>
                         </li>
                         <div class = "space" style = "color:transparent;">&nbsp</div>
                         <li class="nav-item dropdown nav-element" id="more">
@@ -62,7 +62,11 @@
             </div>
         </nav>
     </div>
-
+    <?php
+        $comnameErr = $comemailErr  = "";
+        $comname = $comemail ="";
+        include('register_validate.php');
+    ?>
     <div class = "register-bg">
             <div class = "block" id = "register" style="color: white;">
                 <div class = "container" style = "display: flex;">
@@ -70,19 +74,19 @@
                             <div id = "title" >REGISTER</div>
                             <div>&nbsp</div>
                             <div>&nbsp</div>
-                            <form id = "register-form">
+                            <form id = "register-form" method="post" action="register_side.php">
                                 <div id = "register-fields">
                                     <div class = "fields">
-                                        <div>COMMUNITY NAME</div>
+                                        <div>COMMUNITY NAME <span class="error" style = "color:red;"> <?php echo $comnameErr;?></span></div>
                                         <div>&nbsp</div>
-                                        <div>COMMUNITY EMAIL</div>
+                                        <div>COMMUNITY EMAIL <span class="error" style = "color:red;"> <?php echo $comemailErr;?></div>
                                         <div>&nbsp</div>
                                         <div>COMMUNITY TYPE</div>
                                     </div>
                                     <div class = "inputs">
-                                        <input class = "input-box" type="text" name="community-name">
+                                        <input class = "input-box" type="text" name="community-name" value = "<?php echo $comname?>">
                                         <div>&nbsp</div>
-                                        <input class = "input-box" type="text" name="community-email">
+                                        <input class = "input-box" type="text" name="community-email" value = "<?php echo $comemail?>">
                                         <div>&nbsp</div>
                                         <div class = "community">
                                             <input class = "rad" type="radio" name = "community-type" value="apartment" checked> Apartment  
