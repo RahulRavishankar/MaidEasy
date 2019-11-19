@@ -127,7 +127,7 @@
                         <br><br><h2>CLEANING</h2>
                         <div class="overlay">
                             <h3 class="overlay-title">Cleaning</h3>
-                            <div class="text">Text to be added</div>
+                            <div class="text">The process of removing unwanted substances, such as dirt, infectious agents, and other impurities, or environment.</div>
                         </div>
                     </div>
                         
@@ -139,7 +139,7 @@
                         <br><br><h2>COOKING</h2>
                         <div class="overlay">
                             <h3 class="overlay-title">Cooking</h3>
-                            <div class="text">Text to be added</div>
+                            <div class="text">The art, technology, science and craft of preparing food for consumption.</div>
                         </div>
                     </div>
                     <div class = "space-contact">&nbsp</div>
@@ -150,7 +150,7 @@
                         <br><br><h2>WASHING</h2>
                         <div class="overlay">
                             <h3 class="overlay-title">Washing</h3>
-                            <div class="text">Text to be added</div> <!--Includes Washing clothes with detergents, pressing and folding dried clothes-->
+                            <div class="text">The process of cleaning, usually dishes or clothes with water and often some kind of soap or detergent.</div> <!--Includes Washing clothes with detergents, pressing and folding dried clothes-->
                         </div>
                     </div>
                 </div>
