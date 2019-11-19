@@ -20,32 +20,32 @@
         <div>
             <nav id = "navbar" class="navbar navbar-expand-lg navbar-light shadow fixed-top" style = "background-color:transparent">
                 <div class="container" >
-                    <a class="navbar-brand" href="maideasy.php#home">Maid Easy</a>
+                    <a class="navbar-brand" href="index.php#home">Maid Easy</a>
                         <button id = "navbar-ham" class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarResponsive">
                             <ul class="navbar-nav ml-auto">
                             <li class="nav-element current">
-                                <a class="nav-link" href="maideasy.php#home">Home
+                                <a class="nav-link" href="index.php#home">Home
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <div class = "space" style = "color:transparent;">&nbsp</div>
                             <li class="nav-element">
-                                <a class="nav-link" href="maideasy.php#about">About</a>
+                                <a class="nav-link" href="index.php#about">About</a>
                             </li>
                             <div class = "space" style = "color:transparent;">&nbsp</div>
                             <li class="nav-element">
-                                <a class="nav-link" href="maideasy.php#services">Services</a>
+                                <a class="nav-link" href="index.php#services">Services</a>
                             </li>
                             <div class = "space" style = "color:transparent;">&nbsp</div>
                             <li class="nav-element">
-                                <a class="nav-link" href="maideasy.php#register">Register</a>
+                                <a class="nav-link" href="index.php#register">Register</a>
                             </li>
                             <div class = "space" style = "color:transparent;">&nbsp</div>
                             <li class="nav-element">
-                                <a class="nav-link" href="maideasy.php#contact">Contact</a>
+                                <a class="nav-link" href="index.php#contact">Contact</a>
                             </li>
                             <div class = "space" style = "color:transparent;">&nbsp</div>
                             <li class="nav-item dropdown nav-element" id="more">

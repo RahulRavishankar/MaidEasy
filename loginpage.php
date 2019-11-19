@@ -3,7 +3,7 @@
 	if(isset($_SESSION["Username"]))
 	{
 		echo "<script>alert('Already Logged in');</script>";
-		header("maideasy.html");
+		header("index.html");
 	}
 ?>
 
@@ -40,19 +40,19 @@
 							</li>
 							<div class = "space" style = "color:transparent;">&nbsp</div>
 							<li class="nav-element">
-								<a class="nav-link" href="maideasy.html#about">About</a>
+								<a class="nav-link" href="index.php#about">About</a>
 							</li>
 							<div class = "space" style = "color:transparent;">&nbsp</div>
 							<li class="nav-element">
-								<a class="nav-link" href="maideasy.html#services">Services</a>
+								<a class="nav-link" href="index.php#services">Services</a>
 							</li>
 							<div class = "space" style = "color:transparent;">&nbsp</div>
 							<li class="nav-element">
-								<a class="nav-link" href="maideasy.html#register">Register</a>
+								<a class="nav-link" href="index.php#register">Register</a>
 							</li>
 							<div class = "space" style = "color:transparent;">&nbsp</div>
 							<li class="nav-element">
-								<a class="nav-link" href="maideasy.html#contact">Contact</a>
+								<a class="nav-link" href="index.php#contact">Contact</a>
 							</li>
 							<div class = "space" style = "color:transparent;">&nbsp</div>
 							<li class="nav-item dropdown nav-element" id="more">

@@ -34,7 +34,7 @@ if($row['Username']==$username && $row['Password']==$password)
 	echo '<script>alert("Login Successful");</script>';
 	$_SESSION["Username"]=$username;
 	$_SESSION["Password"]=$password;
-	header("Location:maideasy.php");
+	header("Location:index.php");
 }
 else{
 	echo '<script>alert("Login Failed");</script>';

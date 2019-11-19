@@ -22,25 +22,25 @@
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                         <li class="nav-element">
-                            <a class="nav-link" href="maideasy.php">Home
+                            <a class="nav-link" href="index.php">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <div class = "space" style = "color:transparent;">&nbsp</div>
                         <li class="nav-element">
-                            <a class="nav-link" href="maideasy.php#about">About</a>
+                            <a class="nav-link" href="index.php#about">About</a>
                         </li>
                         <div class = "space" style = "color:transparent;">&nbsp</div>
                         <li class="nav-element">
-                            <a class="nav-link" href="maideasy.php#services">Services</a>
+                            <a class="nav-link" href="index.php#services">Services</a>
                         </li>
                         <div class = "space" style = "color:transparent;">&nbsp</div>
                         <li class="nav-element current">
-                            <a class="nav-link" href="maideasy.php#register">Register</a>
+                            <a class="nav-link" href="index.php#register">Register</a>
                         </li>
                         <div class = "space" style = "color:transparent;">&nbsp</div>
                         <li class="nav-element">
-                            <a class="nav-link" href="maideasy.php#contact">Contact</a>
+                            <a class="nav-link" href="index.php#contact">Contact</a>
                         </li>
                         <div class = "space" style = "color:transparent;">&nbsp</div>
                         <li class="nav-item dropdown nav-element" id="more">

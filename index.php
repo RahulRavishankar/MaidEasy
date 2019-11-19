@@ -235,7 +235,7 @@
                     <div class = "contact-container">
                             <div id = "title" >CONTACT US</div>
                             <div>&nbsp</div>
-                            <form id = "contact-form" method="post" action="maideasy.php#contact">
+                            <form id = "contact-form" method="post" action="index.php#contact">
                                 <div id = "contact-fields">
                                     <div class = "fields">
                                         <div>NAME <span class="error" style = "color:red;"> <?php echo $nameErr;?></span></div>
