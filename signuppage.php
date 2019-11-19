@@ -79,10 +79,10 @@
                     <label for ="type" class="labels"> HELPER NAME <span style="color: transparent;">007Space</span></label><input type="text" id="helper-name" name="HelperName"><br><br>
                     <label for ="name" class="labels">WORK TYPE  <span style="color: transparent;">007Space</span></label>    
                         <select id="worktype-dropdown" name="WorkType">
-                            <option>ffbdfv</option>
-                            <option>ffbddbffv</option>
-                            <option>fdfbfbddfv</option>
-                            <option>ffdbfbdfv</option>
+                            <option style = "color: black;">Washing</option>
+                            <option style = "color: black;">Cleaning</option>
+                            <option style = "color: black;">Cooking</option>
+                            <option style = "color: black;">Sweeping</option>
                         </select><br><br>
                     <label for ="name" class="labels">TIME SLOT <span style="color: transparent;">007Space</span></label><input type="text" id="name" name="TimeSlot"><br><br>  <!-- Fill this -->
                     <label for ="name" class="labels">COMMUNITY NAME <span style="color: transparent;">007Space</span></label><input type="text" id="community-name" name="CommunityName">
