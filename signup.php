@@ -36,7 +36,7 @@ if(mysqli_query($connect,$sql))
 {
 	echo '<script>console.log("Data added successfully!");</script>';
 }
-header("Location:login.html");
+header("Location:loginpage.php");
 
 // closing connection
 mysqli_close($connect);

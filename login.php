@@ -26,10 +26,10 @@ if(mysqli_select_db($connect,$database))
 }  
 
 //Compare username and Password
-$sql="SELECT * FROM `signup_table` WHERE Username='$username' AND Password='$password' ";
+$sql="SELECT * FROM `signup_table` WHERE Name='$username' AND Password='$password' ";
 $result=mysqli_query($connect,$sql);
 $row=mysqli_fetch_array($result);
-if($row['Username']==$username && $row['Password']==$password)
+if($row['Name']==$username && $row['Password']==$password)
 {
 	echo '<script>alert("Login Successful");</script>';
 	$_SESSION["Username"]=$username;
