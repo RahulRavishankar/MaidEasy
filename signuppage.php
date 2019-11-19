@@ -74,7 +74,7 @@
             <form action="signup.php" method="POST">
                 <div class="input-fields">
                     <label for ="name" class="labels">USERNAME<span style="color: transparent;">007Space</span></label><input type="text" id="name" name="Name"><br><br>
-                    <label for ="password" class="labels">PASSWORD<span style="color: transparent;">007Space</span></label><input type="text" id="password" name="Password"><br><br>
+                    <label for ="password" class="labels">PASSWORD<span style="color: transparent;">007Space</span></label><input type="password" id="password" name="Password"><br><br>
                     <label for ="email" class="labels">HOUSE NO.<span style="color: transparent;">007Space</span> </label><input type="number" id="houseno" name="Houseno"><br><br>
                     <label for ="type" class="labels"> HELPER NAME <span style="color: transparent;">007Space</span></label><input type="text" id="helper-name" name="HelperName"><br><br>
                     <label for ="name" class="labels">WORK TYPE  <span style="color: transparent;">007Space</span></label>    

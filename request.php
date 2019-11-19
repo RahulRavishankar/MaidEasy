@@ -4,11 +4,6 @@ $user="root";
 $pass="";
 $database="MaidEasy";
 
-/*$name=$_POST["Name"];  
-$houseno=$_POST["HouseNo"];
-$worktype=$_POST["WorkType"];
-$time=$_POST["Time"];
-$pay=$_POST["Pay"]; */
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 //Connecting to the Server
@@ -27,6 +22,4 @@ if(mysqli_select_db($connect,$database))
 
 // closing connection
 //mysqli_close($connect);
-
-//header("Location:request.html");
 ?>
