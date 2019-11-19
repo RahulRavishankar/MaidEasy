@@ -26,7 +26,7 @@ if(mysqli_select_db($connect,$database))
 }  
 
 //Compare username and Password
-$sql="SELECT * FROM Account_details WHERE Username='$username' AND Password='$password' ";
+$sql="SELECT * FROM `signup_table` WHERE Username='$username' AND Password='$password' ";
 $result=mysqli_query($connect,$sql);
 $row=mysqli_fetch_array($result);
 if($row['Username']==$username && $row['Password']==$password)

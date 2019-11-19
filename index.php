@@ -178,7 +178,7 @@
                     <div class="col-md-4">
                         <div class="service-box">
                             <div>
-                                <span><img src = "img/apartment.jpg" style="border-radius: 25px; position:absolute; height:133px;width:200px;margin-left: 50px;"></span>
+                                <a href = "register_side.php"><img src = "img/apartment.jpg" style="border-radius: 25px; position:absolute; height:133px;width:200px;margin-left: 50px;"></a>
                         </div>
                             <div class="service-content">
                                 <h2 class="s-title">Apartments</h2>
@@ -192,7 +192,7 @@
                     <div class="col-md-4">
                         <div class="service-box">
                             <div>
-                                <span><img src = "img/gated.jpg" style="border-radius: 25px; position:absolute; height:133px;width:200px;margin-left: 50px;"></span>
+                                <a href = "register_side.php"><img src = "img/gated.jpg" style="border-radius: 25px; position:absolute; height:133px;width:200px;margin-left: 50px;"></a>
                             </div>
                             <div class="service-content">
                                 <!-- <img src = "img/independent1.jpg"> -->
@@ -207,7 +207,7 @@
                     <div class="col-md-4">
                         <div class="service-box">
                             <div>
-                                <span><img src = "img/independent1.jpg" style="border-radius: 25px; position:absolute; height:133px;width:200px;margin-left: 50px;"></span>
+                                <a href = "register_side.php"><img src = "img/independent1.jpg" style="border-radius: 25px; position:absolute; height:133px;width:200px;margin-left: 50px;"></a>
                             </div>
                             <div class="service-content">
                                 <h2 class="s-title">Independent House</h2>
