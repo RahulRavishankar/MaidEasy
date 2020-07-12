@@ -8,6 +8,15 @@ This application acts as an 'Uber' for domestic help. It enables households to p
 
 ---
 
+## Screenshots
+
+![First page](img/SS1.png)
+---
+![Second page](img/SS2.png)
+
+
+---
+
 ## Tech Stack
 * Bootstrap  
 * JQuery  
