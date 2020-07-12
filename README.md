@@ -1,7 +1,15 @@
 # MaidEasy
+MaidEasy: An application to aid domestic help in different communities  
 
-9-10-2019: Initialized
+---
 
-16-10-2019: Completed: Navbar, Background Incomplete: Branch: Typewriting effect
+## Tech Stack
+*Bootstrap
+*JQuery
+*Ajax
+*PHP
+*JavaScript
+*CSS
+*HTML
 
-20-10-2019: Died; Parallax, Responsive navbar transition background conflict resolved
+---
