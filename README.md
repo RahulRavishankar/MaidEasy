@@ -10,10 +10,11 @@ This application acts as an 'Uber' for domestic help. It enables households to p
 
 ## Screenshots
 
-![First page](img/SS1.png)
----
-![Second page](img/SS2.png)
+![First page](img/SS1.PNG)
 
+---
+
+![Second page](img/SS2.PNG)
 
 ---
 
